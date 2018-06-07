@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="file:///c:/urcode/Unit-4-Game/assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="file:///c:/urcode/Unit-4-Game/assets/css/style.css">
+    <title>Crystal Game</title>
+</head>
+
+<body>
+    <div class="wrapper-container">
+        <div class="row">
+            <div id="div1" class="col-lg-4">
+                <h2>Crystals Collector!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div id="div2" class="col-lg-4">
+                <p>You will be given a random number at the beginning of each new game.</p>
+                <p>To play, use the four crystal buttons below to match the random number you have been given. Each crystal will add a random specific amount of points between 1-12 to your score.</p>
+                <p>You win the game by exactly matching your score to the random number, you lose the game if your total score goes above the random number.</p>
+                <p>Pay close attention to your score as you click each crystal, the point value they are assigned is hidden from you until you click each button.</p>
+                <p>Each time the game is restarted, the game will change the value of the random number and each crystal.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="div3" class="col-lg-2">
+                <!--random number to match-->
+                <h1 id="randomNumber">0</h1>
+            </div>
+            <div id="div4" class="col-lg-1">
+                <!--wins/ losses-->
+                <p id="text">Wins: <em id="wins">0</em></p>
+                <p id="text">Losses: <em id="losses">0</em></p>
+            </div>
+        </div>
+        <div class="row">
+            <!--buttons-->
+            <div id="buttons" class="col-lg-3">
+                <button id="crystal1" type="button" class="button">
+                    <img src="http://icongal.com/gallery/image/179497/garnet_red_gem_jewel.png" />
+                </button>
+                <button id="crystal2" type="button" class="button">
+                    <img src="http://icongal.com/gallery/image/179515/topaz_jewel_gem_blue.png" />
+                </button>
+                <button id="crystal3" type="button" class="button">
+                    <img src="http://icons-for-free.com/free-icons/png/512/127301.png" />
+                </button>
+                <button id="crystal4" type="button" class="button">
+                    <img src="https://cdn4.iconfinder.com/data/icons/free-crystal-icons/512/Citrine.png" />
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="div6" class="col-lg-2">
+                <p id="scoreText">Your current score is:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="div7" class="col-lg-2">
+                <!--Score-->
+                <h1 id="currentScore">0</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript/JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="file:///c:/urcode/Unit-4-Game/assets/javascript/game.js"></script>
+
+</body>
+
+</html>
